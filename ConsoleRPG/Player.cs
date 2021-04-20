@@ -16,9 +16,9 @@ namespace ConsoleRPG
         private bool darkvision;
         public Player()
         {
-            playername = "John Doe";
-            playerclass = "Fighter";
-            race = "Human";
+            playername = "n/a";
+            playerclass = "n/a";
+            race = "n/a";
             health = 100;
             darkvision = false;
         }
