@@ -16,16 +16,16 @@ namespace ConsoleRPG
         private bool darkvision;
         public Player()
         {
-            playername = "John Doe";
-            playerclass = "Fighter";
-            race = "Human";
+            playername = "n/a";
+            playerclass = "n/a";
+            race = "n/a";
             health = 100;
             darkvision = false;
         }
 
         public void ChooseRace(string raceparam)
         {
-            switch(raceparam)
+            switch (raceparam)
             {
                 case "1":
                     race = "Human";
@@ -40,12 +40,14 @@ namespace ConsoleRPG
                     race = "Orc";
                     health = 125;
                     break;
+                default:
+                    Console.WriteLine("Not a valid race.");
+                    break;
             }
         }
 
         public void ChooseClass(string classparam)
         {
-            Console.WriteLine("Choosing class.\n1. Fighter\n2. Mage\n3. Ranger");
             switch (classparam)
             {
                 case "1":
@@ -57,12 +59,36 @@ namespace ConsoleRPG
                 case "3":
                     playerclass = "Ranger";
                     break;
+                default:
+                    Console.WriteLine("Not a valid class.");
+                    break;
             }
         }
 
-        public void ChooseName(string playerNameParam)
+        public void ChooseName(string nameparam)
         {
-            playername = playerNameParam;
+            playername = nameparam;
+        }
+        
+        public string GetRace()
+        {
+            return race;
+        }
+
+        public string GetClass()
+        {
+            return playerclass;
+        }
+
+        public string GetName()
+        {
+            return playername;
+        }
+
+        public bool HasDarkVision()
+        {
+            if (darkvision) return true;
+            else return false;
         }
 
         public string ReturnDescription()
