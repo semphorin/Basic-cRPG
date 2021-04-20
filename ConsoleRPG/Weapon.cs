@@ -13,13 +13,17 @@ namespace ConsoleRPG
         public int range;
         public string weaponname;
 
+        public int Crit()
+        {
+            return damage *= 2;
+        }
     }
 
     class Sword : Weapon
     {
         public Sword()
         {
-            damage = 15;
+            damage = 20;
             weaponname = "Simple Sword";
             range = 5;
         }
