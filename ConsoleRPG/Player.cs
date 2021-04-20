@@ -45,6 +45,7 @@ namespace ConsoleRPG
 
         public void ChooseClass(string classparam)
         {
+            Console.WriteLine("Choosing class.\n1. Fighter\n2. Mage\n3. Ranger");
             switch (classparam)
             {
                 case "1":
