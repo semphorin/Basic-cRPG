@@ -45,6 +45,10 @@ namespace ConsoleRPG
             }
             while (chabool == false);
 
+            
+            // Main game code below
+
+
             Console.Clear();
             Console.WriteLine("It's time to begin your first adventure.");
             if (!mainCharacter.HasDarkVision())

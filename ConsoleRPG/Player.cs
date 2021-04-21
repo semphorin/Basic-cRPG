@@ -17,8 +17,8 @@ namespace ConsoleRPG
         public Player()
         {
             playername = "n/a";
-            playerclass = "n/a";
-            race = "n/a";
+            playerclass = "Fighter";
+            race = "Human";
             health = 100;
             darkvision = false;
         }
