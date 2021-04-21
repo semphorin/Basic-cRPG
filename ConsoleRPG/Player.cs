@@ -14,6 +14,7 @@ namespace ConsoleRPG
         private int health;
         private int experience = 0;
         private bool darkvision;
+        private bool hasweapon;
         public Player()
         {
             playername = "n/a";
