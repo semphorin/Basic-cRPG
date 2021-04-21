@@ -17,4 +17,9 @@ namespace ConsoleRPG
         Enemy goblin = new Enemy();
 
     }
+
+    public void EnemyIntroduction()
+    {
+ 
+    }
 }
