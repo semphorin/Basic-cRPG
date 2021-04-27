@@ -49,30 +49,6 @@ namespace ConsoleRPG
             // Main game code below
 
 
-            Console.Clear();
-            Console.WriteLine("It's time to begin your first adventure.");
-            if (!mainCharacter.HasDarkVision())
-            {
-                Console.WriteLine("\nYou awaken in darkness. The air is musty and still." +
-                    "\nWhat do you do?\n");
-                Console.WriteLine("1. Wait for your eyes to adapt." +
-                    "\n2. Light a torch." +
-                    "\n3. Call out.");
-                switch (Console.ReadLine())
-                {
-                    //unfinished results
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                }
-            }
-            else
-            {
-                //progression if character has darkvision
-            }
         }
     }
 }

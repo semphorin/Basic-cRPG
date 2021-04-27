@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ConsoleRPG
 {
-    public class Enemy
+    public class Entity
     {
         // Each of these are properties of the Enemy
         public int ID { get; set; }
@@ -14,5 +14,17 @@ namespace ConsoleRPG
         public int MaximumHitPoints { get; set; }
         public int CurrentHitPoints { get; set; }
         public int Damage { get; set; }
+        public string Race { get; set; }
     }
+
+    public class Enemy : Entity
+    {
+        
+    }
+
+    public class NPC : Entity
+    {
+
+    }
+
 }
