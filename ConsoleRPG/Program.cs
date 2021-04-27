@@ -48,7 +48,7 @@ namespace ConsoleRPG
             
             // Main game code below
 
-
+            
         }
     }
 }

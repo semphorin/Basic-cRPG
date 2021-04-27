@@ -26,5 +26,8 @@ namespace ConsoleRPG
     {
 
     }
-
+    public string GetRace()
+    {
+        return race;
+    }
 }
